@@ -37,11 +37,10 @@ server.put('/projects/:id', (req, res) => {
     const { id } = req.params
     const { title } = req.body
   
-    projects[ id-1 ].title = title 
+    projects[ id-1 ].title = title
   
     return res.json([projects])
 })
-
 
 server.delete('/projects/:id', (req, res) => {
     const { id } = req.params
